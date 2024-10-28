@@ -153,14 +153,7 @@ namespace DaConsole
 
 			try
 			{
-
-				//	TODO add your server URL here
-				//	this is the server url for Softing OPCToolbox Demo Server
-				//	first choice is COM-DA 
-				string url = "opcda:///Softing.OPCToolboxDemo_ServerDA.1/{2E565242-B238-11D3-842D-0008C779D775}";
-
-				//uncomment if you need an XML-DA access
-				//	string url = "http://localhost:8079/OPC/DA";
+				string url = "http://localhost:8079/OPC/DA";
 
 				m_daSession = new MyDaSession(url);
 
@@ -222,8 +215,6 @@ namespace DaConsole
 				}
 
 				m_itemList[5] = m_daItem6;
-
-
 
 				connectResult = m_daSession.Connect(true, false, m_executionOptions);
 			}

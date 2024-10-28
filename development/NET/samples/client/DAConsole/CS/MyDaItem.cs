@@ -57,11 +57,8 @@ namespace DaConsole
 
 		public static void HandleValueChanged(DaItem aDaItem, ValueQT aValue)
 		{
-			if (aDaItem.Id == "maths.sin")
-			{
 				System.Console.WriteLine("Value changed!");
 				System.Console.WriteLine(String.Format("{0,-19} {1} {2,-50} ", aDaItem.Id, "-", aValue.ToString()));
-			}
 		} // end HandleValueChanged
 
 

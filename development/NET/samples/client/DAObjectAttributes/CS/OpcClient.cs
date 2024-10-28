@@ -133,10 +133,10 @@ namespace DAObjectAttributes
 				//	TODO add your server URL here
 				//	this is the server url for Softing OPCToolbox Demo Server
 				//	first choice is COM-DA 
-				string url = "opcda://localhost/Softing.OPCToolboxDemo_ServerDA/{2e565242-b238-11d3-842d-0008c779d775}";
+				//string url = "opcda://localhost/Softing.OPCToolboxDemo_ServerDA/{2e565242-b238-11d3-842d-0008c779d775}";
 
 				//uncomment if you need an XML-DA access
-				//	string url = "http://localhost:8079/OPC/DA";
+				string url = "http://localhost:8079/OPC/DA";
 
 				m_daSession = new MyDaSession(url);
 
