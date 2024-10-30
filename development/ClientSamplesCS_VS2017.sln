@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataControl_VS2017", "NET\s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPCEnumerate_VS2017", "NET\samples\client\OPCEnumerate\CS\OPCEnumerate_VS2017.csproj", "{99E55825-4F98-4383-B591-A069EC65E0CB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Movares", "Movares\Movares.csproj", "{05298DB1-CBD8-4A80-85D3-67B6B8606F21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,6 +110,10 @@ Global
 		{99E55825-4F98-4383-B591-A069EC65E0CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99E55825-4F98-4383-B591-A069EC65E0CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99E55825-4F98-4383-B591-A069EC65E0CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05298DB1-CBD8-4A80-85D3-67B6B8606F21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05298DB1-CBD8-4A80-85D3-67B6B8606F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05298DB1-CBD8-4A80-85D3-67B6B8606F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05298DB1-CBD8-4A80-85D3-67B6B8606F21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
