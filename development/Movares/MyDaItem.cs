@@ -1,8 +1,7 @@
-using System;
-using Softing.OPCToolbox.Client;
 using Softing.OPCToolbox;
+using Softing.OPCToolbox.Client;
 
-namespace MovaresClientApp
+namespace Movares
 {
     public class MyDaItem : DaItem
     {

@@ -2,33 +2,35 @@ using System;
 using System.Collections.Generic;
 using System.Timers;
 using System.IO;
+using Movares;
 using Newtonsoft.Json;
 using Softing.OPCToolbox.Client;
 using Softing.OPCToolbox;
+using Timer = System.Timers.Timer;
 
 namespace MovaresClientApp
 {
-    public class OPCClient
+    public class OpcClient
     {
-        private DaSession _session;
-        private DaSubscription _subscription;
+        private MyDaSession _session;
+        private MyDaSubscription _subscription;
         private Timer _timer;
-        private List<DaItem> _items;
+        private List<MyDaItem> _items;
 
-        public OPCClient()
+        public OpcClient()
         {
-            _items = new List<DaItem>();
+            _items = [];
+            SaveConfiguration("config.json");
         }
 
         public void CreateSession(string url)
         {
-            _session = new DaSession(url);
+            _session = new MyDaSession(url);
         }
 
         public void AddSubscription(uint updateRate)
         {
-            _subscription = new DaSubscription(updateRate, _session);
-            _session.AddDaSubscription(updateRate, _subscription);
+            _subscription = new MyDaSubscription(updateRate, _session);
         }
 
         public void LoadConfiguration(string configFilePath)
@@ -36,13 +38,24 @@ namespace MovaresClientApp
             var configJson = File.ReadAllText(configFilePath);
             var config = JsonConvert.DeserializeObject<Configuration>(configJson);
             ConfigureItems(config.ItemIds);
+            _session.Connect(true, false, new ExecutionOptions(EnumExecutionType.ASYNCHRONOUS, 0));
+        }
+        
+        public void SaveConfiguration(string configFilePath)
+        {
+            var config = new Configuration
+            {
+                ItemIds = ["maths.sin", "time.local.second"]
+            };
+            var configJson = JsonConvert.SerializeObject(config);
+            File.WriteAllText(configFilePath, configJson);
         }
 
-        public void ConfigureItems(List<string> itemIds)
+        private void ConfigureItems(List<string> itemIds)
         {
             foreach (var itemId in itemIds)
             {
-                var item = new DaItem(itemId, _subscription);
+                var item = new MyDaItem(itemId, _subscription);
                 _items.Add(item);
             }
         }
@@ -57,9 +70,9 @@ namespace MovaresClientApp
 
         private void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
-            foreach (var item in _items)
+            foreach (DaItem item in _items)
             {
-                item.Read(0, out ValueQT value, out int result);
+                item.Read(100, out ValueQT value, out int result, new ExecutionOptions(EnumExecutionType.ASYNCHRONOUS, 0));
                 if (ResultCode.SUCCEEDED(result))
                 {
                     Console.WriteLine($"Item: {item.Id}, Value: {value.Data}, Quality: {value.Quality}, Timestamp: {value.TimeStamp}");
