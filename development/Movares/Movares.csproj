@@ -8,13 +8,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Reference Include="TBN461">
-        <HintPath>..\..\..\UnityPackages.OPCIO\OPCIOService~\Dependencies\TBN461.dll</HintPath>
-      </Reference>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      <Reference Include="TBN461">
+        <HintPath>..\bin\TBN461.dll</HintPath>
+      </Reference>
     </ItemGroup>
     <PropertyGroup>
         <PostBuildEvent>
