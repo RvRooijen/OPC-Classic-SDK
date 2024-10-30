@@ -1,8 +1,0 @@
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Session\CS\obj\x64\Debug\Session_VS2017.csproj.AssemblyReference.cache
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Session\CS\obj\x64\Debug\Session_VS2017.csproj.CoreCompileInputs.cache
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Session\CS\bin\VS2017\x64\Debug\Session.exe
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Session\CS\bin\VS2017\x64\Debug\Session.pdb
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Session\CS\bin\VS2017\x64\Debug\TBN461.dll
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Session\CS\obj\x64\Debug\Session_.0ECDAF25.Up2Date
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Session\CS\obj\x64\Debug\Session.exe
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Session\CS\obj\x64\Debug\Session.pdb

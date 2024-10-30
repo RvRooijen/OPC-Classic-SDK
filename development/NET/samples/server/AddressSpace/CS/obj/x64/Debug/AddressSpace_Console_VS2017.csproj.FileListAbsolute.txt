@@ -1,8 +1,0 @@
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\obj\x64\Debug\AddressSpace_Console_VS2017.csproj.AssemblyReference.cache
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\obj\x64\Debug\AddressSpace_Console_VS2017.csproj.CoreCompileInputs.cache
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\bin\VS2017\Console\x64\Debug\AddressSpaceConsole.exe
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\bin\VS2017\Console\x64\Debug\AddressSpaceConsole.pdb
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\bin\VS2017\Console\x64\Debug\TBN461.dll
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\obj\x64\Debug\AddressS.41D4A5AF.Up2Date
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\obj\x64\Debug\AddressSpaceConsole.exe
-D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\obj\x64\Debug\AddressSpaceConsole.pdb
