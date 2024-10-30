@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Movares")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3fa50b52cf89c23f7899a7d67c13a6894d9de282")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+915e33d46b863e891f6740c26a18bc25a7abfa98")]
 [assembly: System.Reflection.AssemblyProductAttribute("Movares")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Movares")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

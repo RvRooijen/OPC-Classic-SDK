@@ -32,8 +32,9 @@ namespace Movares
 
             //	proceed with the OPC Toolkit core initialization
             result = Application.Instance.Initialize();
-
-            if (ResultCode.SUCCEEDED(result))
+            System.Console.WriteLine($"Result of initialization: {ResultCode.SUCCEEDED(result)}");
+            
+            /*if (ResultCode.SUCCEEDED(result))
             {
                 //	enable toolkit internal initialization
                 Application.Instance.EnableTracing(
@@ -44,7 +45,7 @@ namespace Movares
                     "Trace.txt",
                     1000000,
                     0);
-            }   //	end if
+            }   //	end if*/
             
             return result;
 

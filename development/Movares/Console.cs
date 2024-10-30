@@ -15,7 +15,7 @@ namespace Movares
                 MyDaSubscription subscription = session.AddSubscription(1000);
                 Configuration config = OpcUtils.LoadConfiguration("config.json");
                 MovaresClient opcClient = new MovaresClient(config, subscription, session, 1000);
-
+                
                 // Initialize the client instance
                 if (!ResultCode.SUCCEEDED(opcClient.Initialize()))
                 {
@@ -24,7 +24,6 @@ namespace Movares
 
                 while (true)
                 {
-                    System.Console.WriteLine("Hey");
                     opcClient.Update();
                     Thread.Sleep(1000);
                 }
