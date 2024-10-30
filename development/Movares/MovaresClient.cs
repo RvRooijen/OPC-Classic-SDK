@@ -27,6 +27,9 @@ namespace Movares
             int result = (int)EnumResultCode.S_OK;
             Application.Instance.VersionOtb = 447;
 
+            // Log message to indicate the start of initialization
+            System.Console.WriteLine("Starting initialization...");
+
             //	proceed with the OPC Toolkit core initialization
             result = Application.Instance.Initialize();
 
@@ -79,11 +82,14 @@ namespace Movares
 
         public void Update()
         {
-            //_subscription.Read(100, _items, out _values, out _results, new ExecutionOptions());
+            _subscription.Read(100, _items, out _values, out _results, new ExecutionOptions());
         }
 
         public void Terminate()
         {
+            // Log message to indicate the start of termination
+            System.Console.WriteLine("Starting termination...");
+
             _subscription.Disconnect(new ExecutionOptions());
             _session.Disconnect(new ExecutionOptions());
             
