@@ -1,92 +1,96 @@
-using System;
-using System.Collections.Generic;
 using System.Timers;
-using System.IO;
-using Movares;
 using Newtonsoft.Json;
-using Softing.OPCToolbox.Client;
 using Softing.OPCToolbox;
+using Softing.OPCToolbox.Client;
 using Timer = System.Timers.Timer;
 
-namespace MovaresClientApp
+namespace Movares
 {
-    public class OpcClient
+    public class MovaresClient
     {
-        private MyDaSession _session;
+        private MyDaItem[] _items;
         private MyDaSubscription _subscription;
-        private Timer _timer;
-        private List<MyDaItem> _items;
+        private MyDaSession _session;
+        
+        private ValueQT[] _values;
+        private int[] _results;
 
-        public OpcClient()
+        public MovaresClient(Configuration config, MyDaSubscription subscription, MyDaSession session, int interval)
         {
-            _items = [];
-            SaveConfiguration("config.json");
-        }
-
-        public void CreateSession(string url)
-        {
-            _session = new MyDaSession(url);
-        }
-
-        public void AddSubscription(uint updateRate)
-        {
-            _subscription = new MyDaSubscription(updateRate, _session);
-        }
-
-        public void LoadConfiguration(string configFilePath)
-        {
-            var configJson = File.ReadAllText(configFilePath);
-            var config = JsonConvert.DeserializeObject<Configuration>(configJson);
-            ConfigureItems(config.ItemIds);
-            _session.Connect(true, false, new ExecutionOptions(EnumExecutionType.ASYNCHRONOUS, 0));
+            _session = session;
+            _subscription = subscription;
+            _items = InitializeDaItems(config, subscription, session);
         }
         
-        public void SaveConfiguration(string configFilePath)
+        public int Initialize()
         {
-            var config = new Configuration
-            {
-                ItemIds = ["maths.sin", "time.local.second"]
-            };
-            var configJson = JsonConvert.SerializeObject(config);
-            File.WriteAllText(configFilePath, configJson);
-        }
+            int result = (int)EnumResultCode.S_OK;
+            Application.Instance.VersionOtb = 447;
 
-        private void ConfigureItems(List<string> itemIds)
-        {
-            foreach (var itemId in itemIds)
-            {
-                var item = new MyDaItem(itemId, _subscription);
-                _items.Add(item);
-            }
-        }
+            //	proceed with the OPC Toolkit core initialization
+            result = Application.Instance.Initialize();
 
-        public void StartUpdating(int interval)
-        {
-            _timer = new Timer(interval);
-            _timer.Elapsed += OnTimedEvent;
-            _timer.AutoReset = true;
-            _timer.Enabled = true;
-        }
-
-        private void OnTimedEvent(Object source, ElapsedEventArgs e)
-        {
-            foreach (DaItem item in _items)
+            if (ResultCode.SUCCEEDED(result))
             {
-                item.Read(100, out ValueQT value, out int result, new ExecutionOptions(EnumExecutionType.ASYNCHRONOUS, 0));
-                if (ResultCode.SUCCEEDED(result))
+                //	enable toolkit internal initialization
+                Application.Instance.EnableTracing(
+                    EnumTraceGroup.ALL,
+                    EnumTraceGroup.ALL,
+                    EnumTraceGroup.ALL,
+                    EnumTraceGroup.ALL,
+                    "Trace.txt",
+                    1000000,
+                    0);
+            }   //	end if
+            
+            return result;
+
+        }   //	end Initialize
+
+        private MyDaItem[] InitializeDaItems(Configuration config, MyDaSubscription subscription, MyDaSession session)
+        {
+            var items = new MyDaItem[config.ItemIds.Count];
+            try
+            {
+                for (var i = 0; i < config.ItemIds.Count; i++)
                 {
-                    Console.WriteLine($"Item: {item.Id}, Value: {value.Data}, Quality: {value.Quality}, Timestamp: {value.TimeStamp}");
+                    var item = config.ItemIds[i];
+                    var daItem = new MyDaItem(item, subscription);
+                    if (!daItem.Valid)
+                    {
+                        throw new Exception($"Failed to create item: {item}");
+                    }
+                    items[i] = daItem;
                 }
-                else
+
+                var connection = session.Connect(true, false, new ExecutionOptions(EnumExecutionType.ASYNCHRONOUS, 0));
+                if (!ResultCode.SUCCEEDED(connection))
                 {
-                    Console.WriteLine($"Failed to read item: {item.Id}, Result: {result}");
+                    throw new Exception("Failed to connect to the server");
                 }
             }
-        }
-    }
+            catch (Exception e)
+            {
+                System.Console.WriteLine(e);
+            }
 
-    public class Configuration
-    {
-        public List<string> ItemIds { get; set; }
+            return items;
+        }
+
+        public void Update()
+        {
+            //_subscription.Read(100, _items, out _values, out _results, new ExecutionOptions());
+        }
+
+        public void Terminate()
+        {
+            _subscription.Disconnect(new ExecutionOptions());
+            _session.Disconnect(new ExecutionOptions());
+            
+            _session.RemoveDaSubscription(_subscription);
+            Application.Instance.RemoveDaSession(_session);
+            
+            Application.Instance.Terminate();
+        }
     }
 }

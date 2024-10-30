@@ -9,7 +9,7 @@
       "Movares/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
-          "TBN461": "4.47.0.3888"
+          "TBN461": "4.47.1.3920"
         },
         "runtime": {
           "Movares.dll": {}
@@ -23,11 +23,11 @@
           }
         }
       },
-      "TBN461/4.47.0.3888": {
+      "TBN461/4.47.1.3920": {
         "runtime": {
           "TBN461.dll": {
-            "assemblyVersion": "4.47.0.3888",
-            "fileVersion": "4.47.0.3888"
+            "assemblyVersion": "4.47.1.3920",
+            "fileVersion": "4.47.1.3920"
           }
         }
       }
@@ -46,7 +46,7 @@
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
-    "TBN461/4.47.0.3888": {
+    "TBN461/4.47.1.3920": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

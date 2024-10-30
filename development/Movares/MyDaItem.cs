@@ -3,31 +3,62 @@ using Softing.OPCToolbox.Client;
 
 namespace Movares
 {
-    public class MyDaItem : DaItem
-    {
-        public string ItemId { get; private set; }
-        public string ItemPath { get; private set; }
-        public ValueQT Value { get; private set; }
+	public class MyDaItem : DaItem
+	{
 
-        public MyDaItem(string itemId, MyDaSubscription parentSubscription) : base(itemId, parentSubscription)
+		#region Constructor
+		//-----------------
+
+		public MyDaItem(string itemId, MyDaSubscription parentSubscription) : base(itemId, parentSubscription)
 		{
-            ValueChanged += new ValueChangedEventHandler(HandleValueChanged);
+			ValueChanged += new ValueChangedEventHandler(HandleValueChanged);
 			StateChangeCompleted += new StateChangeEventHandler(HandleStateChanged);
 			PerformStateTransitionCompleted += new PerformStateTransitionEventHandler(HandlePerformStateTransition);
-        }
+		}
 
-       public static void HandleStateChanged(ObjectSpaceElement sender, EnumObjectState state)
+		//--
+		#endregion
+
+		#region Private Members
+		//---------------------
+
+		#region Private Attributes
+		//------------------------
+
+
+		//--
+		#endregion
+
+		//--
+		#endregion
+
+		#region Public Methods
+		//---------------------
+
+		//--
+		#endregion
+
+		#region Public Properties
+		//-----------------------
+
+
+		//--
+		#endregion
+
+		#region Handles
+
+		public static void HandleStateChanged(ObjectSpaceElement sender, EnumObjectState state)
 		{
 			MyDaItem item = sender as MyDaItem;
 			System.Console.WriteLine(item + " " + item.Id + " State Changed - " + state);
-		}
+		} // end HandleStateChanged
 
 
 		public static void HandleValueChanged(DaItem aDaItem, ValueQT aValue)
 		{
 				System.Console.WriteLine("Value changed!");
 				System.Console.WriteLine(String.Format("{0,-19} {1} {2,-50} ", aDaItem.Id, "-", aValue.ToString()));
-		}
+		} // end HandleValueChanged
 
 
 		public static void HandlePerformStateTransition(
@@ -44,6 +75,13 @@ namespace Movares
 			{
 				System.Console.WriteLine(sender + "  Performed state transition failed! Result: " + result);
 			}
-		}
-    }
-}
+		} // end HandlePerformStateTransition
+
+
+		//--
+		#endregion
+
+	}   // end class MyDaItem
+
+
+}   //	end namespace
