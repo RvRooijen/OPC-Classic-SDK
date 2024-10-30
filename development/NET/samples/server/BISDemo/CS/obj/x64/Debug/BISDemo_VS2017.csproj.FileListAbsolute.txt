@@ -1,0 +1,8 @@
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\BISDemo\CS\bin\VS2017\x64\Debug\BisDemo.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\BISDemo\CS\bin\VS2017\x64\Debug\BisDemo.pdb
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\BISDemo\CS\bin\VS2017\x64\Debug\TBN461.dll
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\BISDemo\CS\obj\x64\Debug\BISDemo_VS2017.csproj.AssemblyReference.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\BISDemo\CS\obj\x64\Debug\BISDemo_VS2017.csproj.CoreCompileInputs.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\BISDemo\CS\obj\x64\Debug\BISDemo_.6733885D.Up2Date
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\BISDemo\CS\obj\x64\Debug\BisDemo.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\BISDemo\CS\obj\x64\Debug\BisDemo.pdb

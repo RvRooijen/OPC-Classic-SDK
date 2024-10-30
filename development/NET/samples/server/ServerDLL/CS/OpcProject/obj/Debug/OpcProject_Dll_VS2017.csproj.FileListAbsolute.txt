@@ -1,0 +1,2 @@
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\ServerDLL\CS\OpcProject\obj\Debug\OpcProject_Dll_VS2017.csproj.AssemblyReference.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\ServerDLL\CS\OpcProject\obj\Debug\OpcProject_Dll_VS2017.csproj.CoreCompileInputs.cache

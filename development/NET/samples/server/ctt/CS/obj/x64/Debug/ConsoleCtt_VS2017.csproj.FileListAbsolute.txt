@@ -1,0 +1,8 @@
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\ctt\CS\obj\x64\Debug\ConsoleCtt_VS2017.csproj.AssemblyReference.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\ctt\CS\obj\x64\Debug\ConsoleCtt_VS2017.csproj.CoreCompileInputs.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\ctt\CS\bin\VS2017\x64\Debug\ConsoleCtt.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\ctt\CS\bin\VS2017\x64\Debug\ConsoleCtt.pdb
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\ctt\CS\bin\VS2017\x64\Debug\TBN461.dll
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\ctt\CS\obj\x64\Debug\ConsoleC.9E529347.Up2Date
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\ctt\CS\obj\x64\Debug\ConsoleCtt.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\ctt\CS\obj\x64\Debug\ConsoleCtt.pdb

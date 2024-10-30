@@ -1,0 +1,8 @@
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\AEConsole\CS\obj\Debug\AEConsole_VS2017.csproj.AssemblyReference.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\AEConsole\CS\obj\Debug\AEConsole_VS2017.csproj.CoreCompileInputs.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\AEConsole\CS\bin\VS2017\Debug\AeConsole.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\AEConsole\CS\bin\VS2017\Debug\AeConsole.pdb
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\AEConsole\CS\bin\VS2017\Debug\TBN461.dll
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\AEConsole\CS\obj\Debug\AEConsol.7D92E902.Up2Date
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\AEConsole\CS\obj\Debug\AeConsole.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\AEConsole\CS\obj\Debug\AeConsole.pdb

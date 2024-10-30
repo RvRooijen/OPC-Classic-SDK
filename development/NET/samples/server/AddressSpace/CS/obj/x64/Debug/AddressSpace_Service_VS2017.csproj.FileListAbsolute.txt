@@ -1,0 +1,10 @@
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\obj\x64\Debug\AddressSpace_Service_VS2017.csproj.AssemblyReference.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\obj\x64\Debug\AddressSpace.OpcService.resources
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\obj\x64\Debug\AddressSpace_Service_VS2017.csproj.GenerateResource.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\obj\x64\Debug\AddressSpace_Service_VS2017.csproj.CoreCompileInputs.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\bin\VS2017\Service\x64\Debug\AeConsole.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\bin\VS2017\Service\x64\Debug\AeConsole.pdb
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\bin\VS2017\Service\x64\Debug\TBN461.dll
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\obj\x64\Debug\AddressS.15A7CB9A.Up2Date
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\obj\x64\Debug\AeConsole.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\AddressSpace\CS\obj\x64\Debug\AeConsole.pdb

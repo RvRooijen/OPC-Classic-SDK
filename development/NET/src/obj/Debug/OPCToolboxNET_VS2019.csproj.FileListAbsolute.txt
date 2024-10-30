@@ -1,0 +1,9 @@
+D:\Projects\OPC-Classic-SDK\development\NET\src\bin\VS2019\AnyCPU\Debug\TBN461.dll
+D:\Projects\OPC-Classic-SDK\development\NET\src\bin\VS2019\AnyCPU\Debug\TBN461.pdb
+D:\Projects\OPC-Classic-SDK\development\NET\src\obj\Debug\OPCToolboxNET_VS2019.csproj.AssemblyReference.cache
+D:\Projects\OPC-Classic-SDK\development\NET\src\obj\Debug\Softing.OPCToolbox.Client.Control.InfoCollector.resources
+D:\Projects\OPC-Classic-SDK\development\NET\src\obj\Debug\Softing.OPCToolbox.Client.Control.SubscriptionProperties.resources
+D:\Projects\OPC-Classic-SDK\development\NET\src\obj\Debug\OPCToolboxNET_VS2019.csproj.GenerateResource.cache
+D:\Projects\OPC-Classic-SDK\development\NET\src\obj\Debug\OPCToolboxNET_VS2019.csproj.CoreCompileInputs.cache
+D:\Projects\OPC-Classic-SDK\development\NET\src\obj\Debug\TBN461.dll
+D:\Projects\OPC-Classic-SDK\development\NET\src\obj\Debug\TBN461.pdb

@@ -1,0 +1,8 @@
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Console\CS\bin\VS2017\x64\Debug\Console.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Console\CS\bin\VS2017\x64\Debug\Console.pdb
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Console\CS\bin\VS2017\x64\Debug\TBN461.dll
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Console\CS\obj\x64\Debug\Console_VS2017.csproj.AssemblyReference.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Console\CS\obj\x64\Debug\Console_VS2017.csproj.CoreCompileInputs.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Console\CS\obj\x64\Debug\Console_.24606C56.Up2Date
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Console\CS\obj\x64\Debug\Console.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\Console\CS\obj\x64\Debug\Console.pdb

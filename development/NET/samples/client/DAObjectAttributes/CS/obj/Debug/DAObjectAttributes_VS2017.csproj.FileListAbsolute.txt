@@ -1,0 +1,8 @@
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\DAObjectAttributes\CS\obj\Debug\DAObjectAttributes_VS2017.csproj.AssemblyReference.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\DAObjectAttributes\CS\obj\Debug\DAObjectAttributes_VS2017.csproj.CoreCompileInputs.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\DAObjectAttributes\CS\bin\VS2017\Debug\DaObjectAttributes.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\DAObjectAttributes\CS\bin\VS2017\Debug\DaObjectAttributes.pdb
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\DAObjectAttributes\CS\bin\VS2017\Debug\TBN461.dll
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\DAObjectAttributes\CS\obj\Debug\DAObject.085E42DA.Up2Date
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\DAObjectAttributes\CS\obj\Debug\DaObjectAttributes.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\client\DAObjectAttributes\CS\obj\Debug\DaObjectAttributes.pdb

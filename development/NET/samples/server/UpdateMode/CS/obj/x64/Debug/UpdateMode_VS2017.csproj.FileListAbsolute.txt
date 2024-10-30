@@ -1,0 +1,8 @@
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\UpdateMode\CS\obj\x64\Debug\UpdateMode_VS2017.csproj.AssemblyReference.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\UpdateMode\CS\obj\x64\Debug\UpdateMode_VS2017.csproj.CoreCompileInputs.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\UpdateMode\CS\bin\VS2017\x64\Debug\UpdateMode.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\UpdateMode\CS\bin\VS2017\x64\Debug\UpdateMode.pdb
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\UpdateMode\CS\bin\VS2017\x64\Debug\TBN461.dll
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\UpdateMode\CS\obj\x64\Debug\UpdateMo.5665141A.Up2Date
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\UpdateMode\CS\obj\x64\Debug\UpdateMode.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\UpdateMode\CS\obj\x64\Debug\UpdateMode.pdb

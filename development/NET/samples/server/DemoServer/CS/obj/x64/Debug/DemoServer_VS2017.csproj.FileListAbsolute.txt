@@ -1,0 +1,8 @@
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\DemoServer\CS\obj\x64\Debug\DemoServer_VS2017.csproj.AssemblyReference.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\DemoServer\CS\obj\x64\Debug\DemoServer_VS2017.csproj.CoreCompileInputs.cache
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\DemoServer\CS\bin\VS2017\x64\Debug\DemoServer.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\DemoServer\CS\bin\VS2017\x64\Debug\DemoServer.pdb
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\DemoServer\CS\bin\VS2017\x64\Debug\TBN461.dll
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\DemoServer\CS\obj\x64\Debug\DemoServ.5C8E8FBA.Up2Date
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\DemoServer\CS\obj\x64\Debug\DemoServer.exe
+D:\Projects\OPC-Classic-SDK\development\NET\samples\server\DemoServer\CS\obj\x64\Debug\DemoServer.pdb
