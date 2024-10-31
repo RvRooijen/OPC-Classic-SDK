@@ -11,48 +11,21 @@ namespace Movares
         private MyDaItem[] _items;
         private MyDaSubscription _subscription;
         private MyDaSession _session;
-        
-        private ValueQT[] _values;
-        private int[] _results;
 
-        public MovaresClient(Configuration config, MyDaSubscription subscription, MyDaSession session, int interval)
+        private ValueQT[] _values = [];
+        private int[] _results = [];
+
+        public MovaresClient(Configuration config)
         {
-            _session = session;
-            _subscription = subscription;
-            _items = InitializeDaItems(config, subscription, session);
+            Application.Instance.Initialize();
+            _session = new MyDaSession(config.Url);
+            _subscription = _session.AddSubscription(config.UpdateRate);
+            _items = InitializeDaItems(config, _subscription, _session);
         }
-        
-        public int Initialize()
-        {
-            int result = (int)EnumResultCode.S_OK;
-            Application.Instance.VersionOtb = 447;
-
-            // Log message to indicate the start of initialization
-            System.Console.WriteLine("Starting initialization...");
-
-            //	proceed with the OPC Toolkit core initialization
-            result = Application.Instance.Initialize();
-            System.Console.WriteLine($"Result of initialization: {ResultCode.SUCCEEDED(result)}");
-            
-            /*if (ResultCode.SUCCEEDED(result))
-            {
-                //	enable toolkit internal initialization
-                Application.Instance.EnableTracing(
-                    EnumTraceGroup.ALL,
-                    EnumTraceGroup.ALL,
-                    EnumTraceGroup.ALL,
-                    EnumTraceGroup.ALL,
-                    "Trace.txt",
-                    1000000,
-                    0);
-            }   //	end if*/
-            
-            return result;
-
-        }   //	end Initialize
 
         private MyDaItem[] InitializeDaItems(Configuration config, MyDaSubscription subscription, MyDaSession session)
         {
+            var executionOptions = new ExecutionOptions(EnumExecutionType.SYNCHRONOUS, 0);
             var items = new MyDaItem[config.ItemIds.Count];
             try
             {
@@ -67,7 +40,7 @@ namespace Movares
                     items[i] = daItem;
                 }
 
-                var connection = session.Connect(true, false, new ExecutionOptions(EnumExecutionType.ASYNCHRONOUS, 0));
+                var connection = session.Connect(true, false, executionOptions);
                 if (!ResultCode.SUCCEEDED(connection))
                 {
                     throw new Exception("Failed to connect to the server");
@@ -84,6 +57,20 @@ namespace Movares
         public void Update()
         {
             _subscription.Read(100, _items, out _values, out _results, new ExecutionOptions());
+            for (var i = 0; i < _items.Length; i++)
+            {
+                var item = _items[i];
+                var value = _values[i];
+                var result = _results[i];
+                if (ResultCode.SUCCEEDED(result))
+                {
+                    System.Console.WriteLine($"Item: {item.Id}, Value: {value.Data}");
+                }
+                else
+                {
+                    System.Console.WriteLine($"Failed to read item: {item.Id}");
+                }
+            }
         }
 
         public void Terminate()

@@ -1,1 +1,1 @@
-{"ItemIds":["maths.sin","time.local.second"]}
+{"ItemIds":["maths.sin","time.local.second", "increment.UI1 array", "increment.BSTR", "secure.I2", "IOP.static.I1 array"], "Url":"http://localhost:8079/OPC/DA", "UpdateRate":1000}

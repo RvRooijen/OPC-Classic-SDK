@@ -16,4 +16,4 @@ D:\Projects\OPC-Classic-SDK\development\Movares\obj\Debug\net8.0\refint\Movares.
 D:\Projects\OPC-Classic-SDK\development\Movares\obj\Debug\net8.0\Movares.pdb
 D:\Projects\OPC-Classic-SDK\development\Movares\obj\Debug\net8.0\Movares.genruntimeconfig.cache
 D:\Projects\OPC-Classic-SDK\development\Movares\obj\Debug\net8.0\ref\Movares.dll
-D:\Projects\OPC-Classic-SDK\development\Movares\obj\Debug\net8.0\Movares.csproj.CopyComplete
+D:\Projects\OPC-Classic-SDK\development\Movares\obj\Debug\net8.0\Movares.csproj.Up2Date
