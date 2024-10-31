@@ -103,7 +103,6 @@ namespace DemoServer
 					EnumTraceGroup.USER1,
 					"OpcServer::Initialize",
 					exc.ToString());
-
 				return (int)EnumResultCode.E_FAIL;
 			}   //	end try...catch
 			return (int)EnumResultCode.S_OK;

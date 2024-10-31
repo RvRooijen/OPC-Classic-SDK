@@ -1,6 +1,8 @@
-namespace Movares;
-
-public class Configuration
+namespace Movares
 {
-    public List<string> ItemIds { get; set; }
+    public class Configuration
+    {
+        public List<string> ItemIds { get; set; }
+    }  
 }
+

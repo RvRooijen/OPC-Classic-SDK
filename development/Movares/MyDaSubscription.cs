@@ -5,17 +5,32 @@ namespace Movares
 {
 	public class MyDaSubscription : DaSubscription
 	{
-
+		private uint _updateRate;
+		private DaSession _session;
+		
 		#region Constructor
 		//-----------------
 
 		public MyDaSubscription(uint updateRate, MyDaSession parentSession) : base(updateRate, parentSession)
 		{
+			_updateRate = updateRate;
+			_session = parentSession;
+
+			// Initialize the subscription with the session
+			InitializeSubscription();
+			
 			DataChanged += new DataChangedEventHandler(HandleDataChanged);
 			StateChangeCompleted += new StateChangeEventHandler(HandleStateChanged);
 			ReadCompleted += new SubscriptionReadEventHandler(HandleSubscriptionReadCompleted);
 			WriteCompleted += new SubscriptionWriteEventHandler(HandleSubscriptionWriteCompleted);
 			PerformStateTransitionCompleted += new PerformStateTransitionEventHandler(HandlePerformStateTransition);
+		}
+
+		private void InitializeSubscription()
+		{
+			// Add code to initialize the subscription
+			// Ensure that all interop calls are correct and properly marshaled
+			
 		}
 
 		//--

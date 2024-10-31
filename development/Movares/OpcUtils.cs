@@ -1,37 +1,39 @@
 ﻿using Newtonsoft.Json;
 
-namespace Movares;
-
-public static class OpcUtils
+namespace Movares
 {
-    public static MyDaSession CreateSession(string url)
+    public static class OpcUtils
     {
-        var session = new MyDaSession(url);
-        if(session.Valid)
+        public static MyDaSession CreateSession(string url)
         {
-            System.Console.WriteLine("Session created");
-            return session;
-        }
+            var session = new MyDaSession(url);
+            if(session.Valid)
+            {
+                System.Console.WriteLine("Session created");
+                return session;
+            }
 
-        throw new Exception("Failed to create session");
-    }
+            throw new Exception("Failed to create session");
+        }
     
-    public static MyDaSubscription AddSubscription(this MyDaSession session, uint updateRate)
-    {
-        var sub = new MyDaSubscription(updateRate, session);
-        if(sub.Valid)
+        public static MyDaSubscription AddSubscription(this MyDaSession session, uint updateRate)
         {
-            System.Console.WriteLine("Subscription created");
-            return sub;
-        }
+            var sub = new MyDaSubscription(updateRate, session);
+            if(sub.Valid)
+            {
+                System.Console.WriteLine("Subscription created");
+                return sub;
+            }
 
-        throw new Exception("Failed to create subscription");
-    }
+            throw new Exception("Failed to create subscription");
+        }
     
-    public static Configuration LoadConfiguration(string configFilePath)
-    {
-        var configJson = File.ReadAllText(configFilePath);
-        System.Console.WriteLine($"Configuration loaded {configJson}");
-        return JsonConvert.DeserializeObject<Configuration>(configJson);
+        public static Configuration LoadConfiguration(string configFilePath)
+        {
+            var configJson = File.ReadAllText(configFilePath);
+            System.Console.WriteLine($"Configuration loaded {configJson}");
+            return JsonConvert.DeserializeObject<Configuration>(configJson);
+        }
     }
 }
+
